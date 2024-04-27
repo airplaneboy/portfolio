@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Major_Mono_Display as Display, IBM_Plex_Mono as Mono } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import './globals.css';
+import { ModeToggle } from '@/components/ModeToggle';
 
 const display = Display({ subsets: ['latin'], weight: ['400'], variable: '--font-display' });
 const mono = Mono({ subsets: ['latin'], weight: ['400'] });
@@ -23,6 +24,9 @@ export default function RootLayout({
       <body className={cn(mono.className, display.variable)}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           {children}
+          <div className='fixed right-8 top-5'>
+            <ModeToggle />
+          </div>
         </ThemeProvider>
       </body>
     </html>
