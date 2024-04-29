@@ -33,14 +33,26 @@ export async function signup(formData: FormData) {
   const data = {
     email: formData.get('email') as string,
     password: formData.get('password') as string,
+    firstName: formData.get('firstName') as string,
+    lastName: formData.get('lastName') as string,
   };
 
   const { error } = await supabase.auth.signUp(data);
 
   if (error) {
+    console.log(error);
     redirect('/error');
   }
 
   revalidatePath('/', 'layout');
   redirect('/');
+}
+
+export async function handleSignInWithGoogle() {
+  const supabase = createClient();
+
+  const { data, error } = await supabase.auth.signInWithOAuth({ provider: 'google' });
+
+  if (error) console.log(error);
+  else return redirect(data.url);
 }
