@@ -21,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={cn(mono.className, display.variable)}>
+      <body
+        className={cn(
+          mono.className,
+          display.variable,
+          'selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black'
+        )}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           {children}
           <div className='fixed right-8 top-5'>

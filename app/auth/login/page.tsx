@@ -21,7 +21,14 @@ export default function LoginForm() {
           <div className='grid gap-4'>
             <div className='grid gap-2'>
               <Label htmlFor='email'>Email</Label>
-              <Input id='email' name='email' type='email' required placeholder='helloworld@example.com' />
+              <Input
+                id='email'
+                name='email'
+                type='email'
+                autoComplete='email'
+                required
+                placeholder='helloworld@example.com'
+              />
             </div>
             <div className='grid gap-2'>
               <div className='flex items-center'>
@@ -30,7 +37,7 @@ export default function LoginForm() {
                   Forgot your password?
                 </Link>
               </div>
-              <Input id='password' name='password' type='password' required />
+              <Input id='password' name='password' type='password' autoComplete='current-password' required />
             </div>
             <Button formAction={login} className='w-full'>
               Login
