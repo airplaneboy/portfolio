@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 bg-black/50 backdrop-blur',
+        'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 dark:bg-black/50 backdrop-blur',
         isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
       )}>
       <nav className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 py-4 min-h-14'>
