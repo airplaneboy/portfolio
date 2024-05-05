@@ -29,7 +29,7 @@ export default function RootLayout({
         )}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
           {children}
-          <div className='fixed right-8 top-5'>
+          <div className='fixed right-8 top-[10px]'>
             <ModeToggle />
           </div>
         </ThemeProvider>

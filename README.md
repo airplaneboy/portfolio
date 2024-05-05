@@ -8,6 +8,9 @@
 - [x] Create auth functionality
 - [x] Create login page
 - [x] Create signup page
+- [x] Integrate Sanity
+- [x] Integrate Sanity MDX
+- [ ] In the about section, write about your journey from game dev, to 3d art and animation, then to web development
 - [ ] Create redirection page for login failed, or another way to alert the user
 - [ ] Create projects (homepage) page
 - [ ] Create profile page
