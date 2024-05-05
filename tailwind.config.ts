@@ -17,6 +17,13 @@ const config = {
       fontFamily: {
         display: ['var(--font-display)', ...fontFamily.sans],
       },
+
+      boxShadow: {
+        minecraft: '-2px -4px 0px 0px #0006 inset, 2px 2px 0px 0px #FFF7 inset',
+        boundless:
+          'inset 1px 2px 3px 0px rgba(31, 31, 31, 1), inset -1px -2px 3px 0px rgba(20, 20, 20, 1), 0px 0px 0px 2px rgb(15, 15, 15)',
+        boundless2: '0 0 0 2px #0f0f0f,inset 1px 2px 2px #3339,inset 0 -2px 1px #1e1e1e,1px 1px 6px 2px #0f0f0f80',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
