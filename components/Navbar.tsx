@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
-import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,24 +19,28 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.div
+    <div
       className={cn(
-        'border-b border-dashed fixed inset-x-0 transition-all border-neutral-400',
+        'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 bg-black/50 backdrop-blur',
         isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
       )}>
-      <nav className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 py-4'>
-        <div>a</div>
+      <nav className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 py-4 min-h-14'>
+        <div className='flex flex-row justify-between gap-5 text-sm'>
+          <Link href='/projects'>Projects</Link>
+          <Link href='/about'>About</Link>
+          <Link href='/contact'>Contact</Link>
+        </div>
 
         <Link
           href='/'
           id='nav-center'
-          className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display h-full flex items-center justify-center p-4 dark:text-white'>
+          className='text-2xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display h-full flex items-center justify-center p-4 dark:text-white'>
           Sulaiman Agara
         </Link>
 
-        <div>b</div>
+        <div>{/* <Link href='/blog'>Blog</Link> */}</div>
       </nav>
-    </motion.div>
+    </div>
   );
 };
 
