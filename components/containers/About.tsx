@@ -1,10 +1,14 @@
+import Biography from './Biography';
 import HeroSection from './HeroSection';
 
 const About = () => {
   return (
-    <div className='pt-[57px] mx-auto max-w-7xl px-10'>
-      <HeroSection />
-    </div>
+    <>
+      <main className='min-h-screen pt-[57px] flex flex-col'>
+        <HeroSection />
+        <Biography />
+      </main>
+    </>
   );
 };
 

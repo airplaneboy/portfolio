@@ -1,9 +1,11 @@
 import Navbar from '@/components/Navbar';
+import About from '@/components/containers/About';
 
 export default function Home() {
   return (
-    <main className='min-h-[100vh_-_57px]'>
+    <main className='min-h-screen relative'>
       <Navbar />
+      <About />
     </main>
   );
 }
