@@ -3,9 +3,11 @@ import About from '@/components/containers/About';
 
 export default function Home() {
   return (
-    <main className='min-h-screen relative'>
+    <>
       <Navbar />
-      <About />
-    </main>
+      <main className='min-h-screen pt-[57px] flex flex-col'>
+        <About />
+      </main>
+    </>
   );
 }

@@ -5,8 +5,9 @@ const AboutPage = () => {
   return (
     <>
       <Navbar />
-
-      <About />
+      <main className='min-h-screen pt-[57px] flex flex-col'>
+        <About />
+      </main>
     </>
   );
 };

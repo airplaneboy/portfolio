@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.section {
+  @apply w-full max-w-7xl px-10 min-h-[calc(100vh_-_57px)] mx-auto;
+}
+
 /* Yin Yang */
 .yin-yang {
   width: 50px;
