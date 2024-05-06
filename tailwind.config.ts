@@ -16,6 +16,7 @@ const config = {
     extend: {
       fontFamily: {
         display: ['var(--font-display)', ...fontFamily.sans],
+        primary: ['var(--font-primary)', ...fontFamily.mono],
       },
 
       boxShadow: {
