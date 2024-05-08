@@ -28,7 +28,9 @@ const Navbar = () => {
         <div className='flex flex-row justify-between gap-5 text-sm'>
           <Link href='/projects'>Projects</Link>
           <Link href='/about'>About</Link>
-          <Link href='/contact'>Contact</Link>
+          <Link href='https://github.com/airplaneboy' target='_blank'>
+            Github
+          </Link>
         </div>
 
         <Link
