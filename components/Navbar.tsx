@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
+  const navItemsContainer: string | undefined = 'flex flex-row justify-between gap-5 text-sm';
+  const navItems: string | undefined = 'hover:underline decoration-4 underline-offset-[4px]';
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,11 +26,15 @@ const Navbar = () => {
         'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 dark:bg-black/50 backdrop-blur z-40',
         isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
       )}>
-      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 py-4 min-h-14'>
-        <div className='flex flex-row justify-between gap-5 text-sm'>
-          <Link href='/projects'>Projects</Link>
-          <Link href='/about'>About</Link>
-          <Link href='https://github.com/airplaneboy' target='_blank'>
+      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 pr-14 py-4 min-h-14'>
+        <div className={navItemsContainer}>
+          <Link href='/projects' className={navItems}>
+            Projects
+          </Link>
+          <Link href='/about' className={navItems}>
+            About
+          </Link>
+          <Link href='https://github.com/airplaneboy' target='_blank' className={navItems}>
             Github
           </Link>
         </div>
@@ -40,7 +46,14 @@ const Navbar = () => {
           Sulaiman Agara
         </Link>
 
-        <div>{/* <Link href='/blog'>Blog</Link> */}</div>
+        <div className={navItemsContainer}>
+          <Link href='/resume' className={navItems}>
+            Resume
+          </Link>
+          <span>
+            <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
+          </span>
+        </div>
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <HeroSection />
-      <Biography />
+      {/* <Biography /> */}
     </>
   );
 };

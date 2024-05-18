@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        style={{ overflow: 'auto !important' }}
+        style={{ overflow: 'auto !important', marginRight: '0px !important' }}
         className={cn(
           primary.className,
           primary.variable,

@@ -5,9 +5,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Navbar />
-      <main className='min-h-screen pt-[57px] flex flex-col'>
-        <Projects />
-      </main>
+      <Projects />
     </>
   );
 };
