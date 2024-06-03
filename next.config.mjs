@@ -3,6 +3,23 @@ import createMDX from '@next/mdx';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.webm$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          publicPath: '/_next/static/videos/',
+          outputPath: 'static/videos/',
+          name: '[name].[hash].[ext]',
+          esModule: false,
+        },
+      },
+    });
+
+    return config;
+  },
+
   images: {
     domains: ['cdn.sanity.io'],
   },
