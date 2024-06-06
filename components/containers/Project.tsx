@@ -8,11 +8,13 @@ const Project = ({
 }: {
   videoSrc?: string;
   heading: string;
-  description: string;
+  description: string | React.ReactNode;
   reverse?: boolean;
 }) => {
   return (
-    <div className={cn(' flex flex-row justify-between items-center gap-20', reverse && 'flex-row-reverse')}>
+    <div
+      className={cn(' flex flex-row justify-between items-center gap-20', reverse && 'flex-row-reverse')}
+      id={heading}>
       <video
         playsInline
         className='shadow-lg border-t dark:border-t-0 shadow-neutral-400 dark:shadow-black rounded-sm w-full mr-[2px] border-0 overflow-hidden'

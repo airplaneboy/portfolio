@@ -1,4 +1,90 @@
 import Project from '@/components/containers/Project';
+import Link from 'next/link';
+
+const link =
+  'italic font-bold text-blue-500 underline decoration-transparent hover:decoration-blue-500 underline-offset-4 decoration-4 transition-colors duration-100 cursor-pointer';
+
+const highlight = 'text-gray-700 dark:text-gray-300 font-semibold';
+
+const items = [
+  {
+    heading: 'Study Express Academy',
+    videoSrc: '/Study Express Optimized5.webm',
+    description: (
+      <>
+        Enter <span className={highlight}>Study Express</span>, a cutting-edge Learning Management System (LMS) platform
+        designed to assist students of all levels with the tools they need to succeed academically. It offers a
+        comprehensive suite of features to meet the needs of learners from subject-specific courses to interactive study
+        materials.
+      </>
+    ),
+  },
+  {
+    heading: 'Pluto AI Image Generator',
+    videoSrc: '/Study Express Optimized5.webm',
+    description: (
+      <>
+        <span className={highlight}>Pluto AI Image Generator</span> is all about creating an easy-to-use application
+        that uses{' '}
+        <Link href='https://replicate.com/' target='_blank' rel='nofollow' className={link}>
+          Replicate
+        </Link>
+        &apos;s powerful machine learning models to generate beautiful images from text inputs. It can be used for
+        visualizing concepts, or simply having fun.
+      </>
+    ),
+  },
+  {
+    heading: 'Username Availability Checker',
+    videoSrc: '/Study Express Optimized5.webm',
+    description: (
+      <>
+        <span className={highlight}>The Username Availability Checker</span> finds the availability of a username across
+        popular social media platforms. It manually check the availability of a username even on platforms without a
+        public API for doing so. Might look simple on the surface, but trust me that&apos;s because the backend is doing
+        all of the hard-work.
+      </>
+    ),
+  },
+  {
+    heading: 'E-Learning Platform API',
+    videoSrc: '/Study Express Optimized5.webm',
+    description: (
+      <>
+        This <span className={highlight}>E-Learning Platform API</span> project provides functionalities for managing
+        courses, lessons, users, assessments, and progress tracking. It&apos;s perfect for delivering high-quality
+        educational content to learners worldwide. In fact, I used some of it&apos;s functionalities in the{' '}
+        <Link href={process.env.NEXT_PUBLIC_STUDY_EXPRESS_LINK || ''} target='_blank' className={link}>
+          Study Express
+        </Link>{' '}
+        Project . It helped me learn how to build a robust backend API to manage everything from user registrations to
+        course content and assessments.
+      </>
+    ),
+  },
+  {
+    heading: 'Fashion Designing Landing Page',
+    videoSrc: '/Study Express Optimized5.webm',
+    description: (
+      <>
+        This <span className={highlight}>Fashion Designing Landing Page</span> focuses on designing a visually appealing
+        and interactive landing page that showcases a unique style and collections for a fashion brand. It&apos;s
+        perfect for making a great first impression on potential customers.
+      </>
+    ),
+  },
+  {
+    heading: 'Dynamic Online Gallery',
+    videoSrc: '/Study Express Optimized5.webm',
+    description: (
+      <>
+        The <span className={highlight}>Dynamic Online Gallery</span>, the landing page of an online gallery, is all
+        about designing a page that highlights a gallery&apos;s collections, exhibitions, and events. It gives the
+        visitors an immersive virtual tour and keeps them informed about upcoming shows.
+      </>
+    ),
+  },
+];
 
 const Projects = () => {
   return (
@@ -9,50 +95,15 @@ const Projects = () => {
         Projects
       </h1>
       <section className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-24 max-w-7xl mx-auto z-10'>
-        <Project
-          videoSrc='/Study Express Optimized5.webm'
-          heading='Study Express Academy'
-          description="With our straightforward resources, designed to adapt your level of understanding. You'll gain access to
-          practice tests, question banks, video tutorials, and exam strategies to help you prepare for test day."
-        />
-
-        <Project
-          reverse
-          videoSrc='/Study Express Optimized5.webm'
-          heading='Pluto AI Image Generator'
-          description="With our straightforward resources, designed to adapt your level of understanding. You'll gain access to
-          practice tests, question banks, video tutorials, and exam strategies to help you prepare for test day."
-        />
-
-        <Project
-          videoSrc='/Study Express Optimized5.webm'
-          heading='Username Availability Checker'
-          description="With our straightforward resources, designed to adapt your level of understanding. You'll gain access to
-          practice tests, question banks, video tutorials, and exam strategies to help you prepare for test day."
-        />
-
-        <Project
-          reverse
-          videoSrc='/Study Express Optimized5.webm'
-          heading='E-Learning Platform API'
-          description="With our straightforward resources, designed to adapt your level of understanding. You'll gain access to
-          practice tests, question banks, video tutorials, and exam strategies to help you prepare for test day."
-        />
-
-        <Project
-          videoSrc='/Study Express Optimized5.webm'
-          heading='Opulent Fashion Designing Landing Page'
-          description="With our straightforward resources, designed to adapt your level of understanding. You'll gain access to
-          practice tests, question banks, video tutorials, and exam strategies to help you prepare for test day."
-        />
-
-        <Project
-          reverse
-          videoSrc='/Study Express Optimized5.webm'
-          heading='Landing Page for a Dynamic Online Gallery'
-          description="With our straightforward resources, designed to adapt your level of understanding. You'll gain access to
-          practice tests, question banks, video tutorials, and exam strategies to help you prepare for test day."
-        />
+        {items.map((item, index) => (
+          <Project
+            key={index}
+            videoSrc={item.videoSrc}
+            heading={item.heading}
+            description={item.description}
+            reverse={Boolean(index % 2)}
+          />
+        ))}
       </section>
     </main>
   );

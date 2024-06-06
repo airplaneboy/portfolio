@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 const sectionContentStyle = 'w-full h-full flex flex-col items-center justify-center gap-10 z-[1]';
 // const ctaButton = 'capitalize border px-8 py-4 rounded-2xl items-center justify-center font-bold block';
-const highlight: string | undefined = 'italic text-blue-500 font-bold';
+const highlight: string | undefined =
+  'italic font-bold text-blue-500 underline decoration-transparent hover:decoration-blue-500 underline-offset-4 decoration-2 transition-colors duration-100';
 
 const HeroSection = () => {
   return (
