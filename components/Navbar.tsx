@@ -2,12 +2,30 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import scrollIntoView from 'scroll-into-view-if-needed';
+import { useRouter, usePathname } from 'next/navigation';
 
 const Navbar = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const navItemsContainer: string | undefined = 'flex flex-row justify-between gap-5 text-sm';
   const navItems: string | undefined = 'hover:underline decoration-4 underline-offset-[4px]';
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const scrollTo = (sectionId: string) => {
+    if (pathname != '/') router.push(`/#${sectionId}`, { scroll: false });
+    else {
+      const element = document.getElementById(`${sectionId}`);
+      if (element)
+        return scrollIntoView(element, {
+          scrollMode: 'if-needed',
+          block: 'start',
+          inline: 'start',
+          behavior: 'smooth',
+        });
+    }
+  };
   useEffect(() => {
     //Navbar Scroll Shadow
     const handleScroll = () => {
@@ -20,6 +38,22 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const decodedHash = decodeURIComponent(window.location.hash);
+
+    if (decodedHash) {
+      const element = document.getElementById(decodedHash.substring(1));
+      if (element) {
+        scrollIntoView(element, {
+          scrollMode: 'if-needed',
+          block: 'start',
+          inline: 'start',
+          behavior: 'smooth',
+        });
+      }
+    }
+  }, [pathname]);
+
   return (
     <nav
       className={cn(
@@ -28,12 +62,12 @@ const Navbar = () => {
       )}>
       <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 pr-14 py-4 min-h-14'>
         <div className={navItemsContainer}>
-          <Link href='/projects' className={navItems}>
+          <button onClick={() => scrollTo('projects-section')} className={navItems}>
             Projects
-          </Link>
-          <Link href='/about' className={navItems}>
+          </button>
+          <button onClick={() => scrollTo('about-section')} className={navItems}>
             About
-          </Link>
+          </button>
           <Link href='https://github.com/airplaneboy' target='_blank' className={navItems}>
             Github
           </Link>

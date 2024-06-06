@@ -88,7 +88,9 @@ const items = [
 
 const Projects = () => {
   return (
-    <main className='min-h-screen pt-[57px] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative'>
+    <main
+      id='projects-section'
+      className='min-h-screen pt-[57px] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative'>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
 
       <h1 className='z-20 w-full text-center underline decoration-4 underline-offset-[4px] pt-20 relative -top-1 decoration decoration-neutral-500 uppercase border-t border-dashed border-neutral-500'>

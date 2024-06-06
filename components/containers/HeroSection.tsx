@@ -7,7 +7,7 @@ const highlight: string | undefined =
 
 const HeroSection = () => {
   return (
-    <section className='relative'>
+    <section className='relative' id='about-section'>
       <div className='h-full w-full min-w-screen z-0 absolute pointer-events-none left-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]' />
       <div className='section flex flex-row justify-between items-center'>
         {/* <div className='inset-0 absolute w-full h-full bg-[linear-gradient(0deg,_rgba(52,50,44,0.7539390756302521)_0%,_rgba(46,100,97,0)_30%,_rgba(34,193,195,0)_100%)]' /> */}
