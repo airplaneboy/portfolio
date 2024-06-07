@@ -29,3 +29,4 @@
 - [ ] Add functionality for "forgot password"
 - [ ] Add tech stack to each project
 - [ ] Use self-hosted fonts
+- [ ] Use a switch to toggle between light and dark mode

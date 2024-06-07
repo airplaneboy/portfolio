@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import About from '@/components/containers/About';
 import Projects from '@/components/containers/Projects';
+import SkillsPage from './skills/page';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main className='min-h-screen pt-[57px] flex flex-col'>
         <About />
         <Projects />
+        <SkillsPage />
       </main>
     </>
   );
