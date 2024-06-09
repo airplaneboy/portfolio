@@ -1,15 +1,18 @@
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 const Project = ({
   videoSrc,
   heading,
   description,
   reverse,
+  link,
 }: {
   videoSrc?: string;
   heading: string;
   description: string | React.ReactNode;
   reverse?: boolean;
+  link?: string;
 }) => {
   return (
     <div
@@ -27,9 +30,12 @@ const Project = ({
       </video>
 
       <div className='w-full flex flex-col justify-center gap-5'>
-        <h2 className='text-2xl font-display leading-[1] font-extrabold text-neutral-600 dark:text-neutral-400 tracking-tight'>
+        <Link
+          href={link || ''}
+          target='_blank'
+          className='text-2xl font-display leading-[1] font-extrabold text-neutral-600 dark:text-neutral-400 tracking-tight'>
           {heading}
-        </h2>
+        </Link>
         <p className='leading-6 text-base font-medium text-neutral-500 tracking-wide sm:tracking-normal'>
           {description}
         </p>

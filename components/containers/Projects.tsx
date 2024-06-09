@@ -8,6 +8,7 @@ const highlight = 'text-gray-700 dark:text-gray-300 font-semibold';
 
 const items = [
   {
+    link: process.env.NEXT_PUBLIC_STUDY_EXPRESS_LINK,
     heading: 'Study Express Academy',
     videoSrc: '/Study Express Optimized5.webm',
     description: (
@@ -20,6 +21,7 @@ const items = [
     ),
   },
   {
+    link: process.env.NEXT_PUBLIC_AI_IMAGE_GENERATOR_LINK,
     heading: 'Pluto AI Image Generator',
     videoSrc: '/Study Express Optimized5.webm',
     description: (
@@ -35,6 +37,7 @@ const items = [
     ),
   },
   {
+    link: process.env.NEXT_PUBLIC_USERNAME_AVAILABILITY_LINK,
     heading: 'Username Availability Checker',
     videoSrc: '/Study Express Optimized5.webm',
     description: (
@@ -47,6 +50,7 @@ const items = [
     ),
   },
   {
+    link: process.env.NEXT_PUBLIC_ELEARNING_API_LINK,
     heading: 'E-Learning Platform API',
     videoSrc: '/Study Express Optimized5.webm',
     description: (
@@ -63,6 +67,7 @@ const items = [
     ),
   },
   {
+    link: process.env.NEXT_PUBLIC_FASHION_LINK,
     heading: 'Fashion Designing Landing Page',
     videoSrc: '/Study Express Optimized5.webm',
     description: (
@@ -74,6 +79,7 @@ const items = [
     ),
   },
   {
+    link: process.env.NEXT_PUBLIC_GALLERY_LINK,
     heading: 'Dynamic Online Gallery',
     videoSrc: '/Study Express Optimized5.webm',
     description: (
@@ -100,6 +106,7 @@ const Projects = () => {
       <section className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-24 max-w-7xl mx-auto z-10'>
         {items.map((item, index) => (
           <Project
+            link={item.link}
             key={index}
             videoSrc={item.videoSrc}
             heading={item.heading}
