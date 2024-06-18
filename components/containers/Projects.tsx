@@ -94,7 +94,7 @@ const items = [
 
 const Projects = () => {
   return (
-    <main
+    <section
       id='projects-section'
       className='min-h-screen pt-[57px] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative shadow-gray-300 dark:shadow-black shadow-md'>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
@@ -103,7 +103,7 @@ const Projects = () => {
       <h1 className='z-20 w-full text-center underline decoration-4 underline-offset-[4px] pt-20 relative -top-1 decoration decoration-neutral-500 uppercase border-t border-dashed border-neutral-500'>
         Projects
       </h1>
-      <section className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-24 max-w-7xl mx-auto z-10'>
+      <div className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-24 max-w-7xl mx-auto z-10'>
         {items.map((item, index) => (
           <Project
             link={item.link}
@@ -114,8 +114,8 @@ const Projects = () => {
             reverse={Boolean(index % 2)}
           />
         ))}
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 
