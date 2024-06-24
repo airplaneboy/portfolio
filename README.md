@@ -17,16 +17,16 @@
 - [x] Create projects (homepage) page
 - [x] Create contact page
 - [x] Logo
-- [ ] Use algorithm animation from to display your pfp
-- [ ] In the about section, write about your journey from game dev, to 3d art and animation, then to web development
+- [x] Use ascii animation from to display your pfp
+- [x] Relevant skills
+- [x] Use a switch to toggle between light and dark mode
+- [ ] Ensure your portfolio website is responsive and looks good on all devices, including desktops, tablets, and smartphones
 - [ ] Create redirection page for login failed, or another way to alert the user
 - [ ] Create blog page
 - [ ] Testimonials
-- [ ] Relevant skills
 - [ ] Use scroll paper plane to lead viewers
 - [ ] Skills and Technologies: Highlight your proficiency in various programming languages, frameworks, and tools. You can present this in a visually appealing way, such as a tag cloud or progress bars
-- [ ] Ensure your portfolio website is responsive and looks good on all devices, including desktops, tablets, and smartphones
 - [ ] Add functionality for "forgot password"
 - [ ] Add tech stack to each project
 - [ ] Use self-hosted fonts
-- [ ] Use a switch to toggle between light and dark mode
+- [ ] In the about section, write about your journey from game dev, to 3d art and animation, then to web development
