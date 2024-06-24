@@ -25,7 +25,7 @@ export function ModeToggle() {
           id='toggle'
           type='checkbox'
         />
-        <div className="relative h-9 w-[5.5rem] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-8 after:h-8 after:bg-gradient-to-r from-blue-500 to-blue-600 via-blue-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[2px] after:left-[7px] active:after:w-[50px] peer-checked:after:left-[82px] peer-checked:after:translate-x-[-100%] shadow-inner shadow-neutral-500 dark:shadow-black duration-300 after:duration-300 after:shadow-md !transition-transform !ease-linear"></div>
+        <div className="relative h-9 w-[5.5rem] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-8 after:h-8 after:bg-gradient-to-r from-blue-500 to-blue-600 via-blue-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[2px] after:left-[7px] active:after:w-[50px] peer-checked:after:left-[82px] peer-checked:after:translate-x-[-100%] shadow-inner shadow-neutral-500 dark:shadow-black duration-500 after:duration-500 after:shadow-md !transition-transform !ease-out"></div>
         <svg
           height='0'
           width='100'

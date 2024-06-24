@@ -4,12 +4,13 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import { useRouter, usePathname } from 'next/navigation';
+import { ModeToggle } from './ModeToggle';
 
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  const navItemsContainer: string | undefined = 'flex flex-row justify-between gap-5 text-sm';
+  const navItemsContainer: string | undefined = 'flex flex-row justify-between gap-5 text-sm items-center';
   const navItems: string | undefined = 'hover:underline decoration-4 underline-offset-[4px]';
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -87,6 +88,8 @@ const Navbar = () => {
           <span>
             <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
           </span>
+
+          <ModeToggle />
         </div>
       </div>
     </nav>
