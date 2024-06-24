@@ -13,10 +13,13 @@ const items = [
     videoSrc: '/Study Express Optimized5.webm',
     description: (
       <>
-        Enter <span className={highlight}>Study Express</span>, a cutting-edge Learning Management System (LMS) platform
-        designed to assist students of all levels with the tools they need to succeed academically. It offers a
-        comprehensive suite of features to meet the needs of learners from subject-specific courses to interactive study
-        materials.
+        Enter{' '}
+        <Link href={process.env.NEXT_PUBLIC_STUDY_EXPRESS_LINK as string} target='_blank' className={highlight}>
+          Study Express
+        </Link>
+        , a cutting-edge Learning Management System (LMS) platform designed to assist students of all levels with the
+        tools they need to succeed academically. It offers a comprehensive suite of features to meet the needs of
+        learners from subject-specific courses to interactive study materials.
       </>
     ),
   },
@@ -26,8 +29,10 @@ const items = [
     videoSrc: '/Study Express Optimized5.webm',
     description: (
       <>
-        <span className={highlight}>Pluto AI Image Generator</span> is all about creating an easy-to-use application
-        that uses{' '}
+        <Link href={process.env.NEXT_PUBLIC_AI_IMAGE_GENERATOR_LINK as string} target='_blank' className={highlight}>
+          Pluto AI Image Generator
+        </Link>{' '}
+        is all about creating an easy-to-use application that uses{' '}
         <Link href='https://replicate.com/' target='_blank' rel='nofollow' className={link}>
           Replicate
         </Link>
@@ -42,10 +47,12 @@ const items = [
     videoSrc: '/Study Express Optimized5.webm',
     description: (
       <>
-        <span className={highlight}>The Username Availability Checker</span> finds the availability of a username across
-        popular social media platforms. It manually check the availability of a username even on platforms without a
-        public API for doing so. Might look simple on the surface, but trust me that&apos;s because the backend is doing
-        all of the hard-work.
+        <Link href={process.env.NEXT_PUBLIC_USERNAME_AVAILABILITY_LINK as string} target='_blank' className={highlight}>
+          The Username Availability Checker
+        </Link>{' '}
+        finds the availability of a username across popular social media platforms. It manually check the availability
+        of a username even on platforms without a public API for doing so. Might look simple on the surface, but trust
+        me that&apos;s because the backend is doing all of the hard-work.
       </>
     ),
   },
@@ -55,9 +62,13 @@ const items = [
     videoSrc: '/Study Express Optimized5.webm',
     description: (
       <>
-        This <span className={highlight}>E-Learning Platform API</span> project provides functionalities for managing
-        courses, lessons, users, assessments, and progress tracking. It&apos;s perfect for delivering high-quality
-        educational content to learners worldwide. In fact, I used some of it&apos;s functionalities in the{' '}
+        This{' '}
+        <Link href={process.env.NEXT_PUBLIC_ELEARNING_API_LINK as string} target='_blank' className={highlight}>
+          E-Learning Platform API
+        </Link>{' '}
+        project provides functionalities for managing courses, lessons, users, assessments, and progress tracking.
+        It&apos;s perfect for delivering high-quality educational content to learners worldwide. In fact, I used some of
+        it&apos;s functionalities in the{' '}
         <Link href={process.env.NEXT_PUBLIC_STUDY_EXPRESS_LINK || ''} target='_blank' className={link}>
           Study Express
         </Link>{' '}
@@ -72,9 +83,12 @@ const items = [
     videoSrc: '/Study Express Optimized5.webm',
     description: (
       <>
-        This <span className={highlight}>Fashion Designing Landing Page</span> focuses on designing a visually appealing
-        and interactive landing page that showcases a unique style and collections for a fashion brand. It&apos;s
-        perfect for making a great first impression on potential customers.
+        This{' '}
+        <Link className={highlight} href={process.env.NEXT_PUBLIC_FASHION_LINK as string} target='_blank'>
+          Fashion Designing Landing Page
+        </Link>{' '}
+        focuses on designing a visually appealing and interactive landing page that showcases a unique style and
+        collections for a fashion brand. It&apos;s perfect for making a great first impression on potential customers.
       </>
     ),
   },
@@ -84,9 +98,13 @@ const items = [
     videoSrc: '/Study Express Optimized5.webm',
     description: (
       <>
-        The <span className={highlight}>Dynamic Online Gallery</span>, the landing page of an online gallery, is all
-        about designing a page that highlights a gallery&apos;s collections, exhibitions, and events. It gives the
-        visitors an immersive virtual tour and keeps them informed about upcoming shows.
+        The{' '}
+        <Link href={process.env.NEXT_PUBLIC_GALLERY_LINK as string} target='_blank' className={highlight}>
+          Dynamic Online Gallery
+        </Link>
+        , the landing page of an online gallery, is all about designing a page that highlights a gallery&apos;s
+        collections, exhibitions, and events. It gives the visitors an immersive virtual tour and keeps them informed
+        about upcoming shows.
       </>
     ),
   },

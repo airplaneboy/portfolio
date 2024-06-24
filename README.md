@@ -20,13 +20,14 @@
 - [x] Use ascii animation from to display your pfp
 - [x] Relevant skills
 - [x] Use a switch to toggle between light and dark mode
+- [x] Skills and Technologies: Highlight your proficiency in various programming languages, frameworks, and tools. You can present this in a visually appealing way, such as a tag cloud or progress bars
 - [ ] Ensure your portfolio website is responsive and looks good on all devices, including desktops, tablets, and smartphones
-- [ ] Create redirection page for login failed, or another way to alert the user
-- [ ] Create blog page
-- [ ] Testimonials
-- [ ] Use scroll paper plane to lead viewers
-- [ ] Skills and Technologies: Highlight your proficiency in various programming languages, frameworks, and tools. You can present this in a visually appealing way, such as a tag cloud or progress bars
-- [ ] Add functionality for "forgot password"
-- [ ] Add tech stack to each project
 - [ ] Use self-hosted fonts
+- [ ] Testimonials
+- [ ] Add tech stack to each project
+- [ ] Use scroll paper plane to lead viewers
+
+- [ ] Add functionality for "forgot password"
+- [ ] Create blog page
+- [ ] Create redirection page for login failed, or another way to alert the user
 - [ ] In the about section, write about your journey from game dev, to 3d art and animation, then to web development
