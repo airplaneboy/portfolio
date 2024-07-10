@@ -82,7 +82,10 @@ const Navbar = () => {
         </Link>
 
         <div className={navItemsContainer}>
-          <Link href='/resume' className={navItems}>
+          <Link
+            href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+            target='_blank'
+            className={navItems}>
             Resume
           </Link>
           <span>
