@@ -5,14 +5,18 @@ import { cn } from '@/lib/utils';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import { useRouter, usePathname } from 'next/navigation';
 import { ModeToggle } from './ModeToggle';
+import { FaBars, FaXmark } from 'react-icons/fa6';
+import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
 
   const navItemsContainer: string | undefined = 'flex flex-row justify-between gap-5 text-sm items-center';
-  const navItems: string | undefined = 'hover:underline decoration-4 underline-offset-[4px]';
+  const navItems: string | undefined =
+    'text-left block hover:underline decoration-4 underline-offset-[4px] max-lg:p-5 max-lg:px-10 max-lg:w-full';
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const scrollTo = (sectionId: string) => {
     if (pathname != '/') router.push(`/#${sectionId}`, { scroll: false });
@@ -61,16 +65,40 @@ const Navbar = () => {
         'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 bg-white/30 dark:bg-black/50 backdrop-blur z-40',
         isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
       )}>
-      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 pr-14 py-4 min-h-14'>
-        <div className={navItemsContainer}>
+      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 pr-14 min-h-14'>
+        {showMenu ? (
+          <FaXmark size={24} onClick={() => setShowMenu(false)} className='lg:hidden cursor-pointer' />
+        ) : (
+          <FaBars size={20} className='lg:hidden cursor-pointer' onClick={() => setShowMenu(true)} />
+        )}
+        {showMenu && (
+          <div className='divide-y absolute flex flex-col gap-2 inset-x-0 top-[61px] bg-black/95 text-white h-[calc(100vh_-_61px)] overflow-hidden'>
+            <button onClick={() => scrollTo('about-section')} className={navItems}>
+              About
+            </button>
+            <button onClick={() => scrollTo('projects-section')} className={navItems}>
+              Projects
+            </button>
+            <button onClick={() => scrollTo('skills-section')} className={navItems}>
+              Skills
+            </button>
+            <Link href='https://github.com/airplaneboy' target='_blank' className={cn(navItems, 'flex')}>
+              Github
+              <HiMiniArrowUpRight />
+            </Link>
+          </div>
+        )}
+
+        <div className={cn(navItemsContainer, 'hidden lg:flex')}>
           <button onClick={() => scrollTo('projects-section')} className={navItems}>
             Projects
           </button>
           <button onClick={() => scrollTo('about-section')} className={navItems}>
             About
           </button>
-          <Link href='https://github.com/airplaneboy' target='_blank' className={navItems}>
+          <Link href='https://github.com/airplaneboy' target='_blank' className={cn(navItems, 'flex')}>
             Github
+            <HiMiniArrowUpRight />
           </Link>
         </div>
 
@@ -88,7 +116,7 @@ const Navbar = () => {
             className={navItems}>
             Resume
           </Link>
-          <span>
+          <span className='hidden lg:block'>
             <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
           </span>
 

@@ -122,16 +122,17 @@ const Projects = () => {
         Projects
       </h1>
       <div className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-24 max-w-7xl mx-auto z-10'>
-        {items.map((item, index) => (
-          <Project
-            link={item.link}
-            key={index}
-            videoSrc={item.videoSrc}
-            heading={item.heading}
-            description={item.description}
-            reverse={Boolean(index % 2)}
-          />
-        ))}
+        {true &&
+          items.map((item, index) => (
+            <Project
+              link={item.link}
+              key={index}
+              videoSrc={`${item.videoSrc}`}
+              heading={item.heading}
+              description={item.description}
+              reverse={Boolean(index % 2)}
+            />
+          ))}
       </div>
     </section>
   );
