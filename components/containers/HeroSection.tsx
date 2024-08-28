@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className='section pt-16 lg:pt-0 flex flex-col lg:flex-row justify-between items-center gap-10'>
         {/* <div className='inset-0 absolute w-full h-full bg-[linear-gradient(0deg,_rgba(52,50,44,0.7539390756302521)_0%,_rgba(46,100,97,0)_30%,_rgba(34,193,195,0)_100%)]' /> */}
         <div className={sectionContentStyle}>
-          <h1 className='text-5xl leading-[1] font-extrabold  pb-3 min-w-[580px] font-display flex flex-col gap-5'>
+          <h1 className='text-base lg:text-5xl leading-[1] font-extrabold  pb-3 min-w-[580px] font-display flex flex-col gap-5'>
             <span className='text-lg font-primary font-light flex '>Hi, I’m</span>
             <span className='flex flex-row whitespace-nowrap'>Sulaiman Agara👋</span>
           </h1>
@@ -42,7 +42,7 @@ const HeroSection = () => {
         </div>
 
         <div className='relative'>
-          <div className='pointer-events-none max-lg:scale-105 absolute w-full bg-gradient-to-r from-transparent via-transparent to-white dark:to-[#070707] z-10 h-full' />
+          <div className='pointer-events-none max-lg:scale-105 absolute w-full bg-gradient-to-r from-transparent via-transparent to-white dark:to-transparent lg:dark:to-[#070707] z-10 h-full' />
           <pre className='hidden dark:block pointer-events-none max-lg:scale-95 absolute w-full h-full z-[1] bg-[linear-gradient(330deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0)_20%,rgba(255,255,255,1)_20%,rgba(255,255,255,1)_45%,rgba(255,255,255,1)_45%,rgba(255,255,255,1)_55%,rgba(255,255,255,1)_55%,rgba(255,255,255,1)_80%,rgba(0,0,0,0)_80%)]' />
           <ASCIIProfilePicture className='overflow text-[9px] leading-none inset-0 z-[5] relative text-black' />
         </div>

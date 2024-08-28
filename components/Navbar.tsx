@@ -65,7 +65,7 @@ const Navbar = () => {
         'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 bg-white/30 dark:bg-black/50 backdrop-blur z-40',
         isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
       )}>
-      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-10 pr-14 min-h-14'>
+      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-6 md:px-10 lg:pr-14 min-h-14'>
         {showMenu ? (
           <FaXmark size={24} onClick={() => setShowMenu(false)} className='lg:hidden cursor-pointer' />
         ) : (
@@ -105,7 +105,7 @@ const Navbar = () => {
         <Link
           href='/'
           id='nav-center'
-          className='text-2xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display h-full flex items-center justify-center p-4 dark:text-white'>
+          className='text-xl max-md:w-full md:text-2xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display h-full flex items-center justify-center md:p-4 text-center dark:text-white'>
           Sulaiman Agara
         </Link>
 
@@ -113,7 +113,7 @@ const Navbar = () => {
           <Link
             href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
             target='_blank'
-            className={navItems}>
+            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs text-neutral-500')}>
             Resume
           </Link>
           <span className='hidden lg:block'>
