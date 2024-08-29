@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className='section pt-16 lg:pt-0 flex flex-col lg:flex-row justify-between items-center gap-10'>
         {/* <div className='inset-0 absolute w-full h-full bg-[linear-gradient(0deg,_rgba(52,50,44,0.7539390756302521)_0%,_rgba(46,100,97,0)_30%,_rgba(34,193,195,0)_100%)]' /> */}
         <div className={sectionContentStyle}>
-          <h1 className='text-base lg:text-5xl leading-[1] font-extrabold  pb-3 min-w-[580px] font-display flex flex-col gap-5'>
+          <h1 className='text-2xl min-[380px]:text-3xl lg:text-5xl leading-[1] font-extrabold  pb-3 min-w-[580px] font-display flex flex-col gap-5'>
             <span className='text-lg font-primary font-light flex '>Hi, I’m</span>
             <span className='flex flex-row whitespace-nowrap'>Sulaiman Agara👋</span>
           </h1>

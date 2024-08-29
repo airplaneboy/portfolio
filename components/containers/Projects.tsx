@@ -121,7 +121,7 @@ const Projects = () => {
       <h1 className='z-20 w-full text-center underline decoration-4 underline-offset-[4px] pt-20 relative -top-1 decoration decoration-neutral-500 uppercase border-t border-dashed border-neutral-500'>
         Projects
       </h1>
-      <div className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-24 max-w-7xl mx-auto z-10'>
+      <div className=' py-32 w-full h-full flex flex-col items-center justify-between gap-40 px-6 md:px-24 max-w-7xl mx-auto z-10'>
         {true &&
           items.map((item, index) => (
             <Project
