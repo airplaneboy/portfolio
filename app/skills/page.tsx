@@ -12,7 +12,7 @@ import ExpressJSLogo from '@/components/skills logo/ExpressJSLogo';
 const SkillsPage = () => {
   // const items = 'leading-[normal] select-none font-primary !text-[0.4rem] w-fit !p-0 !bg-transparent';
   const items =
-    'leading-tight select-none font-primary !text-[0.4rem] w-fit !p-0 !bg-transparent !max-w-[100vw] !overflow-hidden';
+    'leading-tight select-none font-primary !text-[0.17rem] !text-[0.25rem] lg:!text-[0.4rem] w-fit !p-0 !bg-transparent !max-w-[100vw]';
 
   return (
     <div id='skills-section' className='dark:bg-transparent bg-neutral-950'>
@@ -23,7 +23,7 @@ const SkillsPage = () => {
         <h1 className='text-white z-20 w-full text-center underline decoration-4 underline-offset-[4px] pt-20 relative -top-1 decoration decoration-neutral-500 uppercase'>
           Skills
         </h1>
-        <div className='py-32 w-full h-full flex flex-wrap items-center justify-evenly gap-10 px-12 max-w-7xl mx-auto z-10'>
+        <div className='py-32 w-full h-full flex flex-wrap items-center justify-evenly gap-10 px-6 md:px-12 max-w-7xl mx-auto z-10'>
           <HTMLLogo className={items} />
           <CSSLogo className={items} />
           <JSLogo className={items} />

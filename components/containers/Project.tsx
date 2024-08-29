@@ -17,8 +17,8 @@ const Project = ({
   return (
     <div
       className={cn(
-        ' flex flex-col md:flex-row justify-between items-center gap-20',
-        reverse && 'flex-col md:flex-row-reverse'
+        ' flex flex-col lg:flex-row justify-between items-center gap-20',
+        reverse && 'flex-col lg:flex-row-reverse'
       )}
       id={heading}>
       <video
