@@ -7,6 +7,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { ModeToggle } from './ModeToggle';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
+import { ImProfile } from 'react-icons/im';
 
 const Navbar = () => {
   const router = useRouter();
@@ -90,6 +91,13 @@ const Navbar = () => {
               Github
               <HiMiniArrowUpRight />
             </Link>
+            <Link
+              href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+              target='_blank'
+              className={cn(navItems, 'flex')}>
+              Resume
+              <HiMiniArrowUpRight />
+            </Link>
           </div>
         )}
 
@@ -117,10 +125,22 @@ const Navbar = () => {
           <Link
             href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
             target='_blank'
-            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs max-md:text-neutral-500 flex')}>
+            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
             Resume
             <HiMiniArrowUpRight />
           </Link>
+
+          <Link
+            href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+            target='_blank'
+            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs sm:hidden z-10')}>
+            <ImProfile
+              href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+              target='_blank'
+              size={20}
+            />
+          </Link>
+
           <span className='hidden lg:block'>
             <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
           </span>
