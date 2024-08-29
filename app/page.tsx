@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className='min-h-screen pt-[57px] flex flex-col'>
-        {/* <About /> */}
+        <About />
         <Projects />
         <SkillsPage />
       </main>

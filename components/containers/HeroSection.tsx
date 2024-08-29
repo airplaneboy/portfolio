@@ -8,7 +8,7 @@ const highlight: string | undefined =
 
 const HeroSection = () => {
   return (
-    <section className='relative' id='about-section'>
+    <section className='relative overflow-hidden' id='about-section'>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center  bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,0,0,0)_15%)] dark:bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_15%)] z-10'></div>
       <div className='h-full w-full min-w-screen z-0 absolute pointer-events-none left-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]' />
 

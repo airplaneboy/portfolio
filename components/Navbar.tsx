@@ -65,11 +65,15 @@ const Navbar = () => {
         'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 bg-white/30 dark:bg-black/50 backdrop-blur z-40',
         isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
       )}>
-      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-6 md:px-10 lg:pr-14 min-h-14'>
+      <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-6 pl-0 md:px-10 lg:pr-14 min-h-14'>
         {showMenu ? (
-          <FaXmark size={24} onClick={() => setShowMenu(false)} className='lg:hidden cursor-pointer' />
+          <button onClick={() => setShowMenu(false)} className='p-4 z-10'>
+            <FaXmark size={20} className='lg:hidden cursor-pointer z-10' />
+          </button>
         ) : (
-          <FaBars size={20} className='lg:hidden cursor-pointer' onClick={() => setShowMenu(true)} />
+          <button className='p-4 z-10' onClick={() => setShowMenu(true)}>
+            <FaBars size={20} className='lg:hidden cursor-pointer z-10' />
+          </button>
         )}
         {showMenu && (
           <div className='divide-y absolute flex flex-col gap-2 inset-x-0 top-[61px] bg-black/95 text-white h-[calc(100vh_-_61px)] overflow-hidden'>
