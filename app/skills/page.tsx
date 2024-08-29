@@ -12,7 +12,7 @@ import ExpressJSLogo from '@/components/skills logo/ExpressJSLogo';
 const SkillsPage = () => {
   // const items = 'leading-[normal] select-none font-primary !text-[0.4rem] w-fit !p-0 !bg-transparent';
   const items =
-    'leading-tight select-none font-primary !text-[0.17rem] !text-[0.25rem] lg:!text-[0.4rem] w-fit !p-0 !bg-transparent !max-w-[100vw]';
+    'leading-tight select-none font-primary !text-[0.17rem] md:!text-[0.25rem] lg:!text-[0.4rem] w-fit !p-0 !bg-transparent !max-w-[100vw] !overflow-hidden';
 
   return (
     <div id='skills-section' className='dark:bg-transparent bg-neutral-950'>

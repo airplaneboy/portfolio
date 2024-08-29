@@ -117,8 +117,9 @@ const Navbar = () => {
           <Link
             href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
             target='_blank'
-            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs text-neutral-500')}>
+            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs max-md:text-neutral-500 flex')}>
             Resume
+            <HiMiniArrowUpRight />
           </Link>
           <span className='hidden lg:block'>
             <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
