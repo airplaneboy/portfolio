@@ -130,7 +130,8 @@ const Navbar = () => {
             <HiMiniArrowUpRight />
           </Link>
 
-          <Link
+          {/* Mobile Resume Icon */}
+          {/* <Link
             href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
             target='_blank'
             className={cn(navItems, ' max-sm:p-0 max-sm:text-xs sm:hidden z-10')}>
@@ -139,7 +140,7 @@ const Navbar = () => {
               target='_blank'
               size={20}
             />
-          </Link>
+          </Link> */}
 
           <span className='hidden lg:block'>
             <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
