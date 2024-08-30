@@ -68,11 +68,11 @@ const Navbar = () => {
       )}>
       <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-6 pl-0 md:px-10 lg:pr-14 min-h-14'>
         {showMenu ? (
-          <button onClick={() => setShowMenu(false)} className='p-4 z-10'>
+          <button onClick={() => setShowMenu(false)} className='p-4 z-10 lg:absolute lg:hidden'>
             <FaXmark size={20} className='lg:hidden cursor-pointer z-10' />
           </button>
         ) : (
-          <button className='p-4 z-10' onClick={() => setShowMenu(true)}>
+          <button className='p-4 z-10 lg:absolute lg:hidden' onClick={() => setShowMenu(true)}>
             <FaBars size={20} className='lg:hidden cursor-pointer z-10' />
           </button>
         )}
@@ -80,6 +80,9 @@ const Navbar = () => {
           <div className='divide-y absolute flex flex-col gap-2 inset-x-0 top-[61px] bg-black/95 text-white h-[calc(100vh_-_61px)] overflow-hidden'>
             <button onClick={() => scrollTo('about-section')} className={navItems}>
               About
+            </button>
+            <button onClick={() => scrollTo('personal-statement-section')} className={navItems}>
+              Personal Statement
             </button>
             <button onClick={() => scrollTo('projects-section')} className={navItems}>
               Projects
@@ -102,16 +105,24 @@ const Navbar = () => {
         )}
 
         <div className={cn(navItemsContainer, 'hidden lg:flex')}>
+          {/* <button onClick={() => scrollTo('about-section')} className={navItems}>
+            About
+          </button> */}
+          <button
+            onClick={() => scrollTo('personal-statement-section')}
+            className={cn(navItems, '[word-spacing:_-5px_]')}>
+            Personal Statement
+          </button>
           <button onClick={() => scrollTo('projects-section')} className={navItems}>
             Projects
           </button>
-          <button onClick={() => scrollTo('about-section')} className={navItems}>
-            About
+          <button onClick={() => scrollTo('skills-section')} className={navItems}>
+            Skills
           </button>
-          <Link href='https://github.com/airplaneboy' target='_blank' className={cn(navItems, 'flex')}>
+          {/* <Link href='https://github.com/airplaneboy' target='_blank' className={cn(navItems, 'flex')}>
             Github
             <HiMiniArrowUpRight />
-          </Link>
+          </Link> */}
         </div>
 
         <Link
@@ -125,11 +136,17 @@ const Navbar = () => {
           <Link
             href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
             target='_blank'
-            className={cn(navItems, ' max-sm:p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
+            className={cn(navItems, ' !p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
             Resume
             <HiMiniArrowUpRight />
           </Link>
-
+          <Link
+            href='https://github.com/airplaneboy'
+            target='_blank'
+            className={cn(navItems, ' !p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
+            Github
+            <HiMiniArrowUpRight />
+          </Link>
           {/* Mobile Resume Icon */}
           {/* <Link
             href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
@@ -142,9 +159,9 @@ const Navbar = () => {
             />
           </Link> */}
 
-          <span className='hidden lg:block'>
+          {/* <span className='hidden lg:block'>
             <span className='text-blue-500 dark:text-blue-400'>agarasulaimany</span>@gmail.com
-          </span>
+          </span> */}
 
           <ModeToggle />
         </div>

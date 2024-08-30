@@ -114,7 +114,7 @@ const Projects = () => {
   return (
     <section
       id='projects-section'
-      className='min-h-screen pt-[57px] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative shadow-gray-300 dark:shadow-black shadow-md'>
+      className='min-h-screen !pt-0 pt-[57px] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative shadow-gray-300 dark:shadow-black shadow-md'>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,0,0,0)_10%,rgba(0,0,0,0)_85%,rgba(255,255,255,1)_100%)] dark:bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_10%,rgba(0,0,0,0)_85%,rgba(0,0,0,1)_100%)]'></div>
 
