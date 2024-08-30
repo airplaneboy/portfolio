@@ -7,7 +7,7 @@ import { useRouter, usePathname } from 'next/navigation';
 import { ModeToggle } from './ModeToggle';
 import { FaBars, FaXmark } from 'react-icons/fa6';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
-import { ImProfile } from 'react-icons/im';
+// import { ImProfile } from 'react-icons/im';
 
 const Navbar = () => {
   const router = useRouter();
@@ -95,7 +95,7 @@ const Navbar = () => {
               <HiMiniArrowUpRight />
             </Link>
             <Link
-              href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+              href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
               target='_blank'
               className={cn(navItems, 'flex')}>
               Resume
@@ -134,7 +134,7 @@ const Navbar = () => {
 
         <div className={navItemsContainer}>
           <Link
-            href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+            href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
             target='_blank'
             className={cn(navItems, ' !p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
             Resume
@@ -149,11 +149,11 @@ const Navbar = () => {
           </Link>
           {/* Mobile Resume Icon */}
           {/* <Link
-            href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+            href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
             target='_blank'
             className={cn(navItems, ' max-sm:p-0 max-sm:text-xs sm:hidden z-10')}>
             <ImProfile
-              href='https://drive.google.com/file/d/1XCtKB9nLcupRNFif4tN7fwD2MR4A6yQw/view?usp=sharing'
+              href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
               target='_blank'
               size={20}
             />
