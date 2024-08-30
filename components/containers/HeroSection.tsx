@@ -21,16 +21,16 @@ const HeroSection = () => {
           </h1>
           <div className='leading-8 text-sm font-medium text-neutral-600 dark:text-neutral-400'>
             <p>
-              I’m passionate about coding and designing. I started programming as a hobby when I was 14, and now it’s my
-              lifestyle. Currently, I develop full-stack websites using{' '}
-              <Link href='https://nextjs.org/' rel='nofollow' target='_blank' className={highlight}>
-                Next.js
+              a computer science student with a passion for web development, game development, 3D animation, and
+              fitness. Currently serving in the U.S Army Reserves as a{' '}
+              <Link
+                className='font-bold underline'
+                href='https://www.goarmy.com/careers-and-jobs/support-logistics/safety-order-legal/74d-cbrn-specialist'
+                target='_blank'>
+                CBRN
               </Link>{' '}
-              and{' '}
-              <Link href='https://expressjs.com/' rel='nofollow' target='_blank' className={highlight}>
-                Express.js
-              </Link>
-              .
+              specialist, I use disciplined and detail-oriented methods in my work. In my free time, I like exploring
+              new technologies and creating projects.
             </p>
 
             {/* <p>
