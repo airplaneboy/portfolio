@@ -22,9 +22,9 @@
 - [x] Use a switch to toggle between light and dark mode
 - [x] Skills and Technologies: Highlight your proficiency in various programming languages, frameworks, and tools. You can present this in a visually appealing way, such as a tag cloud or progress bars
 - [x] Ensure your portfolio website is responsive and looks good on all devices, including desktops, tablets, and smartphones
-- [ ] Use self-hosted fonts
+- [x] Use self-hosted fonts
 - [x] Testimonials
-- [ ] Add tech stack to each project
+- [x] Add tech stack to each project
 - [ ] Use scroll paper plane to lead viewers
 
 - [ ] Add functionality for "forgot password"
