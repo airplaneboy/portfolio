@@ -1,5 +1,6 @@
 import Project from '@/components/containers/Project';
 import Link from 'next/link';
+import { list } from '@vercel/blob';
 
 const link =
   'italic font-bold text-blue-500 underline decoration-transparent hover:decoration-blue-500 underline-offset-4 decoration-4 transition-colors duration-100 cursor-pointer';
@@ -10,7 +11,12 @@ const items = [
   {
     link: process.env.NEXT_PUBLIC_STUDY_EXPRESS_LINK,
     heading: 'Study Express Academy',
-    videoSrc: '/Study Express Optimized5.webm',
+    videoSrc: (
+      await list({
+        prefix: 'study-express',
+        limit: 1,
+      })
+    ).blobs[0].url,
     description: (
       <>
         Enter{' '}
@@ -26,7 +32,12 @@ const items = [
   {
     link: process.env.NEXT_PUBLIC_AI_IMAGE_GENERATOR_LINK,
     heading: 'Pluto AI Image Generator',
-    videoSrc: '/Study Express Optimized5.webm',
+    videoSrc: (
+      await list({
+        prefix: 'image-generator',
+        limit: 1,
+      })
+    ).blobs[0].url,
     description: (
       <>
         <Link href={process.env.NEXT_PUBLIC_AI_IMAGE_GENERATOR_LINK as string} target='_blank' className={highlight}>
@@ -44,7 +55,12 @@ const items = [
   {
     link: process.env.NEXT_PUBLIC_USERNAME_AVAILABILITY_LINK,
     heading: 'Username Availability Checker',
-    videoSrc: '/Study Express Optimized5.webm',
+    videoSrc: (
+      await list({
+        prefix: 'username-checker',
+        limit: 1,
+      })
+    ).blobs[0].url,
     description: (
       <>
         <Link href={process.env.NEXT_PUBLIC_USERNAME_AVAILABILITY_LINK as string} target='_blank' className={highlight}>
@@ -59,7 +75,12 @@ const items = [
   {
     link: process.env.NEXT_PUBLIC_ELEARNING_API_LINK,
     heading: 'E-Learning Platform API',
-    videoSrc: '/Study Express Optimized5.webm',
+    videoSrc: (
+      await list({
+        prefix: 'education-platform-api',
+        limit: 1,
+      })
+    ).blobs[0].url,
     description: (
       <>
         This{' '}
@@ -80,7 +101,12 @@ const items = [
   {
     link: process.env.NEXT_PUBLIC_FASHION_LINK,
     heading: 'Fashion Designing Landing Page',
-    videoSrc: '/Study Express Optimized5.webm',
+    videoSrc: (
+      await list({
+        prefix: 'fashion-design',
+        limit: 1,
+      })
+    ).blobs[0].url,
     description: (
       <>
         This{' '}
@@ -95,7 +121,12 @@ const items = [
   {
     link: process.env.NEXT_PUBLIC_GALLERY_LINK,
     heading: 'Dynamic Online Gallery',
-    videoSrc: '/Study Express Optimized5.webm',
+    videoSrc: (
+      await list({
+        prefix: 'art-gallery',
+        limit: 1,
+      })
+    ).blobs[0].url,
     description: (
       <>
         The{' '}

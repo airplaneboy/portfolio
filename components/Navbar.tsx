@@ -5,7 +5,8 @@ import { cn } from '@/lib/utils';
 import scrollIntoView from 'scroll-into-view-if-needed';
 import { useRouter, usePathname } from 'next/navigation';
 import { ModeToggle } from './ModeToggle';
-import { FaBars, FaXmark } from 'react-icons/fa6';
+// import { FaBars, FaXmark } from 'react-icons/fa6';
+import { HiBars2, HiXMark } from 'react-icons/hi2';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
 // import { ImProfile } from 'react-icons/im';
 
@@ -68,26 +69,50 @@ const Navbar = () => {
       )}>
       <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-6 pl-0 md:px-10 lg:pr-14 min-h-14'>
         {showMenu ? (
-          <button onClick={() => setShowMenu(false)} className='p-4 z-10 lg:absolute lg:hidden'>
-            <FaXmark size={20} className='lg:hidden cursor-pointer z-10' />
+          <button
+            onClick={() => setShowMenu(false)}
+            className='p-4 z-10 lg:absolute lg:hidden transition-transform active:scale-125'>
+            <HiXMark size={20} className={cn('lg:hidden cursor-pointer z-10')} />
           </button>
         ) : (
-          <button className='p-4 z-10 lg:absolute lg:hidden' onClick={() => setShowMenu(true)}>
-            <FaBars size={20} className='lg:hidden cursor-pointer z-10' />
+          <button
+            className='p-4 z-10 lg:absolute lg:hidden transition-transform active:scale-125'
+            onClick={() => setShowMenu(true)}>
+            <HiBars2 size={20} className='lg:hidden cursor-pointer z-10' />
           </button>
         )}
         {showMenu && (
           <div className='divide-y absolute flex flex-col gap-2 inset-x-0 top-[61px] bg-black/95 text-white h-[calc(100vh_-_61px)] overflow-hidden'>
-            <button onClick={() => scrollTo('about-section')} className={navItems}>
-              About
+            <button
+              onClick={() => {
+                scrollTo('about-section');
+                return setShowMenu(false);
+              }}
+              className={navItems}>
+              Introduction
             </button>
-            <button onClick={() => scrollTo('personal-statement-section')} className={navItems}>
+            <button
+              onClick={() => {
+                scrollTo('personal-statement-section');
+                return setShowMenu(false);
+              }}
+              className={navItems}>
               Personal Statement
             </button>
-            <button onClick={() => scrollTo('projects-section')} className={navItems}>
+            <button
+              onClick={() => {
+                scrollTo('projects-section');
+                return setShowMenu(false);
+              }}
+              className={navItems}>
               Projects
             </button>
-            <button onClick={() => scrollTo('skills-section')} className={navItems}>
+            <button
+              onClick={() => {
+                scrollTo('skills-section');
+                return setShowMenu(false);
+              }}
+              className={navItems}>
               Skills
             </button>
             <Link href='https://github.com/airplaneboy' target='_blank' className={cn(navItems, 'flex')}>
