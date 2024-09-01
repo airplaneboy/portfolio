@@ -22,6 +22,8 @@ const Project = ({
       )}
       id={heading}>
       <video
+        //@ts-ignore
+        loading='lazy'
         playsInline
         className='shadow-lg border-t dark:border-t-0 shadow-neutral-400 dark:shadow-black rounded-sm w-full mr-[2px] border-0 overflow-hidden'
         loop

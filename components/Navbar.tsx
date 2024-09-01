@@ -65,7 +65,8 @@ const Navbar = () => {
     <nav
       className={cn(
         'border-b border-dashed fixed inset-x-0 transition-all duration-300 border-neutral-400 bg-white/30 dark:bg-black/50 backdrop-blur z-40',
-        isScrolled && 'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700'
+        isScrolled &&
+          'shadow-md dark:shadow-black border-solid border-neutral-300 dark:border-neutral-700 backdrop-blur'
       )}>
       <div className='flex flex-row justify-between items-center gap-5 relative w-full max-w-7xl mx-auto px-6 pl-0 md:px-10 lg:pr-14 min-h-14'>
         {showMenu ? (

@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar';
 import About from '@/components/containers/About';
 import Projects from '@/components/containers/Projects';
-import SkillsPage from './skills/page';
+import SkillsPage from '@/components/containers/Skills';
 
 export default function Home() {
   return (

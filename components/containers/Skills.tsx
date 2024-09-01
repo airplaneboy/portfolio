@@ -1,7 +1,7 @@
-import HTMLLogo from '../../components/skills logo/HTMLLogo';
-import CSSLogo from '../../components/skills logo/CSSLogo';
-import JSLogo from '../../components/skills logo/JSLogo';
-import TSLogo from '../../components/skills logo/TSLogo';
+import HTMLLogo from '../skills logo/HTMLLogo';
+import CSSLogo from '../skills logo/CSSLogo';
+import JSLogo from '../skills logo/JSLogo';
+import TSLogo from '../skills logo/TSLogo';
 import ReactLogo from '@/components/skills logo/ReactLogo';
 import NodeLogo from '@/components/skills logo/NodeLogo';
 import MongoDBLogo from '@/components/skills logo/MongoDBLogo';
