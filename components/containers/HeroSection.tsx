@@ -32,7 +32,8 @@ const HeroSection = () => {
                 CBRN
               </Link>{' '}
               specialist, I use disciplined and detail-oriented methods in my work. In my free time, I like exploring
-              new technologies and creating projects.
+              new technologies. With an OSHA 10-Hour General Industry certification, I prioritize safety and maintain
+              professionalism in all environments.
             </p>
 
             {/* <p>
