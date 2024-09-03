@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import ASCIIProfilePicture from '../ASCIIProfilePicture';
+import { Button } from '@/components/ui/button';
+import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const sectionContentStyle = 'w-full h-full flex flex-col justify-center gap-10 z-[1]';
 // const ctaButton = 'capitalize border px-8 py-4 rounded-2xl items-center justify-center font-bold block';
@@ -38,6 +40,26 @@ const HeroSection = () => {
               cutting-edge and modern. Like Chess Grandmaster Hans Niemann said, “The chess speaks for itself,” so I’m
               going to let my work do the talking.
             </p> */}
+          </div>
+          <div className='flex flex-row w-full gap-5 justify-center'>
+            <Button className='w-full !p-0 max-w-xs'>
+              <Link
+                href='https://github.com/airplaneboy'
+                target='_blank'
+                className='w-full h-full flex items-center justify-center font-bold'>
+                Github
+                <HiMiniArrowUpRight />
+              </Link>
+            </Button>
+            <Button className='w-full !p-0 max-w-xs' variant='secondary'>
+              <Link
+                href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
+                target='_blank'
+                className='w-full h-full flex items-center justify-center font-bold'>
+                Résumé
+                <HiMiniArrowUpRight />
+              </Link>
+            </Button>
           </div>
         </div>
 

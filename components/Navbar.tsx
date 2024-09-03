@@ -124,7 +124,7 @@ const Navbar = () => {
               href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
               target='_blank'
               className={cn(navItems, 'flex')}>
-              Resume
+              Résumé
               <HiMiniArrowUpRight />
             </Link>
           </div>
@@ -163,7 +163,7 @@ const Navbar = () => {
             href='https://drive.google.com/file/d/1pVZ52y1Buu-mydcCk4xKXaPLgxdxqzSl/view?usp=sharing'
             target='_blank'
             className={cn(navItems, ' !p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
-            Resume
+            Résumé
             <HiMiniArrowUpRight />
           </Link>
           <Link
