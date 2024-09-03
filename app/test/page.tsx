@@ -42,8 +42,8 @@ const IntersectionVideo = () => {
         obcaecati officia a nam doloremque ut omnis necessitatibus minima dignissimos similique quos velit. Ipsam est
         eius in modi asperiores. Tempore.
       </p>
-      <div className='w-screen min-h-96 h-full bg-transparent backdrop-blur fixed inset-0'>hello</div>
-      <div className='w-screen min-h-96 h-full bg-transparent backdrop-blur-md fixed bottom-0'>hello2</div>
+      <div className='w-screen min-h-96 h-96 bg-transparent backdrop-blur fixed inset-0'>hello</div>
+      <div className='w-screen min-h-96 h-96 bg-transparent backdrop-blur-md fixed top-96 border-t-2'>hello2</div>
     </div>
   );
 };
