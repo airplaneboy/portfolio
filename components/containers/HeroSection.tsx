@@ -43,7 +43,7 @@ const HeroSection = () => {
             </p> */}
           </div>
           <div className='flex flex-row w-full gap-5 justify-center'>
-            <Button className='w-full !p-0 max-w-xs'>
+            <Button className='w-full !p-0 max-w-xs h-12'>
               <Link
                 href='https://github.com/airplaneboy'
                 target='_blank'
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 <HiMiniArrowUpRight />
               </Link>
             </Button>
-            <Button className='w-full !p-0 max-w-xs' variant='secondary'>
+            <Button className='w-full !p-0 max-w-xs h-12' variant='outline'>
               <Link
                 href='https://drive.google.com/file/d/1W2ySRI_0Irb1vuU4lvkvs6EluDEJinD3/view?usp=sharing'
                 target='_blank'
