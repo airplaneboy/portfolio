@@ -113,7 +113,7 @@ const items = [
         <Link className={highlight} href={process.env.NEXT_PUBLIC_FASHION_LINK as string} target='_blank'>
           Fashion Designing Landing Page
         </Link>{' '}
-        focuses on designing a visually appealing and interactive landing page that showcases a unique style and
+        template focuses on designing a visually appealing and interactive landing page that showcases a unique style and
         collections for a fashion brand. It&apos;s perfect for making a great first impression on potential customers.
       </>
     ),
@@ -133,7 +133,7 @@ const items = [
         <Link href={process.env.NEXT_PUBLIC_GALLERY_LINK as string} target='_blank' className={highlight}>
           Dynamic Online Gallery
         </Link>
-        , the landing page of an online gallery, is all about designing a page that highlights a gallery&apos;s
+        , the landing page template of an online gallery, is all about designing a page that highlights a gallery&apos;s
         collections, exhibitions, and events. It gives the visitors an immersive virtual tour and keeps them informed
         about upcoming shows.
       </>
@@ -181,7 +181,7 @@ const Projects = () => {
   return (
     <section
       id='projects-section'
-      className='min-h-screen !pt-0 pt-[57px] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative shadow-gray-300 dark:shadow-black shadow-md'>
+      className='min-h-screen !pt-0 [pt-[57px]] flex flex-col dark:bg-dot-white/[0.1] bg-dot-black/[0.3] relative shadow-gray-300 dark:shadow-black shadow-md'>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
       <div className='absolute pointer-events-none inset-0 flex items-center justify-center bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,0,0,0)_10%,rgba(0,0,0,0)_85%,rgba(255,255,255,1)_100%)] dark:bg-[linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_10%,rgba(0,0,0,0)_85%,rgba(0,0,0,1)_100%)]'></div>
 

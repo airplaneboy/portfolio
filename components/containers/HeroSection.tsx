@@ -45,7 +45,7 @@ const HeroSection = () => {
           <div className='flex flex-row w-full gap-5 justify-center'>
             <Button className='w-full !p-0 max-w-xs h-12'>
               <Link
-                href='https://github.com/airplaneboy'
+                href='https://github.com/airplaneboy?tab=repositories'
                 target='_blank'
                 className='w-full h-full flex items-center justify-center font-bold'>
                 Github
