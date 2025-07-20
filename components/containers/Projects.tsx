@@ -139,6 +139,42 @@ const items = [
       </>
     ),
   },
+  {
+    link: process.env.NEXT_PUBLIC_PLAYTIME_LINK,
+    heading: 'PLAYTIME Gaming Platform',
+    videoSrc: (
+      await list({
+        prefix: 'playtime.webm', 
+        limit: 1,
+      })
+    ).blobs[0].url,
+    description: (
+      <>
+        <Link href={process.env.NEXT_PUBLIC_PLAYTIME_LINK as string} target='_blank' className={highlight}>
+          PLAYTIME Gaming Platform
+        </Link>{' '}
+        template is a modern web-based platform designed for gamers to discover, play, and share a wide variety of online games. It features a curated collection of games, user profiles, leaderboards, and social features to connect with friends and the gaming community. Whether you want to compete for high scores, explore new releases, or just have fun, PLAYTIME provides a seamless and engaging experience for all types of players.
+      </>
+    ),
+  },
+  {
+    link: process.env.NEXT_PUBLIC_PLAYTIME_LINK,
+    heading: 'BlackMarket Store',
+    videoSrc: (
+      await list({
+        prefix: 'blackmarket.webm', 
+        limit: 1,
+      })
+    ).blobs[0].url,
+    description: (
+      <>
+        <Link href={process.env.NEXT_PUBLIC_PLAYTIME_LINK as string} target='_blank' className={highlight}>
+          BlackMarket Store
+        </Link>{' '}
+        template is an innovative e-commerce platform that offers a unique shopping experience for users looking for rare, exclusive, or hard-to-find products. The store features a sleek interface, secure transactions, and a robust search system to help users discover items from independent sellers and niche markets. With features like wishlists, real-time inventory updates, and community-driven reviews, BlackMarket Store makes it easy and safe to buy and sell specialty goods online.
+      </>
+    ),
+  },
 ];
 
 const Projects = () => {
