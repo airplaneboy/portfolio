@@ -121,7 +121,7 @@ const Navbar = () => {
               <HiMiniArrowUpRight />
             </Link>
             <Link
-              href='https://drive.google.com/file/d/1W2ySRI_0Irb1vuU4lvkvs6EluDEJinD3/view?usp=sharing'
+              href='https://drive.google.com/file/d/19NBklYMnSz8SQ4H5Uhvq-YiZ9qu-7mv5/view?usp=sharing'
               target='_blank'
               className={cn(navItems, 'flex')}>
               Résumé
@@ -160,7 +160,7 @@ const Navbar = () => {
 
         <div className={navItemsContainer}>
           <Link
-            href='https://drive.google.com/file/d/1W2ySRI_0Irb1vuU4lvkvs6EluDEJinD3/view?usp=sharing'
+            href='https://drive.google.com/file/d/19NBklYMnSz8SQ4H5Uhvq-YiZ9qu-7mv5/view?usp=sharing'
             target='_blank'
             className={cn(navItems, ' !p-0 max-sm:text-xs max-md:text-neutral-500 hidden sm:flex')}>
             Résumé

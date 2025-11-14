@@ -54,7 +54,7 @@ const HeroSection = () => {
             </Button>
             <Button className='w-full !p-0 max-w-xs h-12' variant='outline'>
               <Link
-                href='https://drive.google.com/file/d/1W2ySRI_0Irb1vuU4lvkvs6EluDEJinD3/view?usp=sharing'
+                href='https://drive.google.com/file/d/19NBklYMnSz8SQ4H5Uhvq-YiZ9qu-7mv5/view?usp=sharing'
                 target='_blank'
                 className='w-full h-full flex items-center justify-center font-bold'>
                 Résumé
