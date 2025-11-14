@@ -46,7 +46,7 @@ const HeroSection = () => {
               href='https://github.com/airplaneboy?tab=repositories'
               target='_blank'
               rel='noopener noreferrer'
-              className='hover:rainbow-btn border border-neutral-700 hover:border-transparent inline-flex items-center justify-center w-full max-w-xs h-16 rounded-[15px] px-4 gap-2 font-bold bg-[#212121] text-white'>
+              className='hover:rainbow-btn border border-neutral-700 hover:border-none inline-flex items-center justify-center w-full max-w-xs h-16 rounded-[15px] px-4 gap-2 font-bold bg-[#212121] text-white'>
               Github
               <HiMiniArrowUpRight />
             </Link>
