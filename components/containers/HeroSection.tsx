@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import ASCIIProfilePicture from '../ASCIIProfilePicture';
-import { Button } from '@/components/ui/button';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const sectionContentStyle = 'w-full h-full flex flex-col justify-center gap-10 z-[1]';
@@ -43,24 +42,23 @@ const HeroSection = () => {
             </p> */}
           </div>
           <div className='flex flex-row w-full gap-5 justify-center'>
-            <Button className='w-full !p-0 max-w-xs h-12'>
-              <Link
-                href='https://github.com/airplaneboy?tab=repositories'
-                target='_blank'
-                className='w-full h-full flex items-center justify-center font-bold'>
-                Github
-                <HiMiniArrowUpRight />
-              </Link>
-            </Button>
-            <Button className='w-full !p-0 max-w-xs h-12' variant='outline'>
-              <Link
-                href='https://drive.google.com/file/d/19NBklYMnSz8SQ4H5Uhvq-YiZ9qu-7mv5/view?usp=sharing'
-                target='_blank'
-                className='w-full h-full flex items-center justify-center font-bold'>
-                Résumé
-                <HiMiniArrowUpRight />
-              </Link>
-            </Button>
+            <Link
+              href='https://github.com/airplaneboy?tab=repositories'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='hover:rainbow-btn border border-neutral-700 hover:border-transparent inline-flex items-center justify-center w-full max-w-xs h-16 rounded-[15px] px-4 gap-2 font-bold bg-[#212121] text-white'>
+              Github
+              <HiMiniArrowUpRight />
+            </Link>
+
+            <Link
+              href='https://drive.google.com/file/d/19NBklYMnSz8SQ4H5Uhvq-YiZ9qu-7mv5/view?usp=sharing'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='rainbow-btn inline-flex items-center justify-center w-full max-w-xs h-16 rounded-[15px] px-4 gap-2 font-bold text-white'>
+              Résumé
+              <HiMiniArrowUpRight />
+            </Link>
           </div>
         </div>
 

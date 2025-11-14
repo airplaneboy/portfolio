@@ -265,3 +265,73 @@
 .on .toggle:after {
   color: #fff;
 }
+
+/* Rainbow gradient border button (Tailwind-compatible) */
+@layer components {
+  .rainbow-btn {
+    --border-radius: 15px;
+    --border-width: 4px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    /* let Tailwind utility classes control padding, background and color */
+  }
+
+  .rainbow-btn::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+      #488cfb,
+      #29dbbc,
+      #ddf505,
+      #ff9f0e,
+      #e440bb,
+      #655adc,
+      #488cfb
+    );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+  mask-clip: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+    pointer-events: none;
+    box-sizing: border-box;
+    /* put the gradient visually above the element so the mask cuts out the center */
+    z-index: 2;
+  }
+
+  .rainbow-btn:hover::after {
+    animation-play-state: running;
+  }
+
+  /* helper for outline variant: keep center transparent */
+  .rainbow-btn.outline {
+    background-color: transparent;
+  }
+
+  @keyframes rotate-hue {
+    to {
+      filter: hue-rotate(1turn);
+    }
+  }
+
+  /* ensure box-sizing for both element and pseudo */
+  .rainbow-btn,
+  .rainbow-btn::after {
+    box-sizing: border-box;
+  }
+}
