@@ -55,7 +55,7 @@ const HeroSection = () => {
               href='https://drive.google.com/file/d/19NBklYMnSz8SQ4H5Uhvq-YiZ9qu-7mv5/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
-              className='rainbow-btn inline-flex items-center justify-center w-full max-w-xs h-16 rounded-[15px] px-4 gap-2 font-bold text-white'>
+              className='rainbow-btn inline-flex items-center justify-center w-full max-w-xs h-16 rounded-[15px] px-4 gap-2 font-bold dark:text-white'>
               Résumé
               <HiMiniArrowUpRight />
             </Link>
